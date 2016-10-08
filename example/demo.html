@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>input checkbox</title>
+<meta name="author" content="Guxingzhe" />
+<meta name="copyright" content="Guxingzhe" />
+<style type="text/css">
+section {
+	position: relative;
+}
+/**
+ * 隐藏默认的checkbox
+ */
+input[type=checkbox] {
+visibility: hidden;
+}
+/*第一*/
+.checkboxOne {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    margin: 20px 80px;
+    position: relative;
+    border-radius: 3px;
+}
+.checkboxOne label {
+	display: block;
+	width: 40px;
+	height: 16px;
+	position: absolute;
+    top: -3px;
+    left: -3px;
+}
+.checkboxOne label span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+ 
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: -3px;
+ 
+    background: #ccc;
+}
+.checkboxOne input[type=checkbox]:checked + label span{
+    left: 27px;
+}
+/*第二*/
+.checkboxTwo {
+	width: 120px;
+	height: 40px;
+	background: #333;
+	margin: 20px 60px;
+	border-radius: 50px;
+	position: relative;
+}
+.checkboxTwo:before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 14px;
+    height: 2px;
+    width: 90px;
+    background: #111;
+}
+.checkboxTwo label {
+	display: block;
+	width: 120px;
+	height: 40px;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
+.checkboxTwo label span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+ 
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+.checkboxTwo input[type=checkbox]:checked + label span{
+    left: 84px;
+    background: #26ca28;
+}
+/*第三*/
+.checkboxThree {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    margin: 20px 60px;
+ 
+    border-radius: 50px;
+    position: relative;
+}
+.checkboxThree .before {
+    content: 'On';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    color: #26ca28;
+    font-size: 16px;
+}
+/**
+ * Create the text for the off position
+ */
+.checkboxThree .after {
+    content: 'Off';
+    position: absolute;
+    top: 12px;
+    left: 84px;    
+    height: 2px;
+    color: #ddd;
+    font-size: 16px;
+}
+.checkboxThree label {
+	display: block;
+	width: 120px;
+	height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.checkboxThree label span {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 50px;
+ 
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+.checkboxThree input[type=checkbox]:checked + label span{
+    left: 60px;
+    background: #26ca28;
+}
+/*第四*/
+.checkboxFour {
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    margin: 20px 90px;
+ 
+    border-radius: 100%;
+    position: relative;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+.checkboxFour label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+ 
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+ 
+    background: #333;
+ 
+    -webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+.checkboxFour input[type=checkbox]:checked + label {
+    background: #26ca28;
+}
+/*第五*/
+.checkboxFive {
+    width: 25px;
+    margin: 20px 100px;
+    position: relative;
+}
+.checkboxFive label {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border:1px solid #ddd;
+}
+.checkboxFive label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+ 
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}  
+
+.checkboxFive label:hover::after {
+    opacity: 0.5;
+}
+ 
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxFive input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+/*第五*/
+.checkboxSix {
+    width: 53px;
+    height: 44px;
+    position: relative;
+}
+.checkboxSix label {
+    display: block;
+    width: 53px;
+    height: 44px;
+ 
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    background: url(img/test-box-unselect.png) no-repeat;
+ 
+}
+.checkboxSix input[type=checkbox]:checked + label {
+    background: url(img/test-box-select.png) no-repeat;
+}
+</style>
+</head>
+<body>
+	<section>
+		<!-- Checbox One -->
+		<h3>Checkbox One</h3>
+		<div class="checkboxOne">
+			<input type="checkbox" value="1" id="checkboxOneInput" name="" checked="checked" />
+			<label for="checkboxOneInput"><span></span></label>
+		</div>
+	</section>
+	<section>
+	  <!-- Checbox Two -->
+	  <h3>Checkbox Two</h3>
+		<div class="checkboxTwo">
+			<input type="checkbox" value="1" id="checkboxTwoInput" name="" />
+			<label for="checkboxTwoInput"><span></span></label>
+		</div>
+	</section>
+	<section>
+		<!-- Checbox Three -->
+		<h3>Checkbox Three</h3>
+		<div class="checkboxThree">
+			<span class="before">On</span>
+			<span class="after">Off</span>
+			<input type="checkbox" value="1" id="checkboxThreeInput" name="" />
+			<label for="checkboxThreeInput"><span></span></label>
+		</div>
+	</section>
+	<section>
+		<!-- Checbox Four -->
+		<h3>Checkbox Four</h3>
+		<div class="checkboxFour">
+			<input type="checkbox" value="1" id="checkboxFourInput" name="" />
+			<label for="checkboxFourInput"></label>
+		</div>
+	</section>
+	<section>
+		<!-- Checbox Five -->
+		<h3>Checkbox Four</h3>
+		<div class="checkboxFive">
+			<input type="checkbox" value="1" id="checkboxFiveInput" name="" />
+			<label for="checkboxFiveInput"></label>
+		</div>
+	</section>
+	<section>
+		<!-- Checbox Six -->
+		<h3>Checkbox Six</h3>
+		<div class="checkboxSix">
+			<input type="checkbox" value="1" id="checkboxSixInput" name="" />
+			<label for="checkboxSixInput"></label>
+		</div>
+	</section>
+</body>
+</html>
+			

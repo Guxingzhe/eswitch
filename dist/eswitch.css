@@ -1,0 +1,459 @@
+.e-switch-flatround input[type=checkbox],
+.e-switch-flatradius input[type=checkbox],
+.e-switch-flat input[type=checkbox],
+.e-switch-round input[type=checkbox],
+.e-switch input[type=checkbox] {
+display: none;
+}
+.e-switch {
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+}
+.e-switch label {
+	display: block;
+	width: 50px;
+	height: 6px;
+ 	border: 1px solid transparent;
+    border-radius: 5px;
+    background: #DADADA;
+	position: relative;
+    top: 16px;
+    left: 2px;
+}
+.e-btn-round{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+ 	border: 1px solid transparent;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    top: -9px;
+    left: -5px;
+    z-index: 10;
+    background: #DADADA;
+}
+/*default、round选择中的状态*/
+.e-switch input[type=checkbox]:checked + label .e-btn-round{
+    left: 33px;
+}
+
+.e-default input[type=checkbox]:checked + label,
+.e-default input[type=checkbox]:checked + label .e-btn-round{
+    background: #FFF;
+    border: 1px solid #DADADA;
+}
+.e-primary input[type=checkbox]:checked + label,
+.e-primary input[type=checkbox]:checked + label .e-btn-round{
+    background: #0E90D2;
+    border: 1px solid #92CDEB;
+}
+.e-success input[type=checkbox]:checked + label,
+.e-success input[type=checkbox]:checked + label .e-btn-round{
+    background: #5EB95E;
+    border: 1px solid #B6DFB6;
+}
+.e-info input[type=checkbox]:checked + label,
+.e-info input[type=checkbox]:checked + label .e-btn-round{
+    background: #3BB4F2;
+    border: 1px solid #A7DDF9;
+}
+.e-warning input[type=checkbox]:checked + label,
+.e-warning input[type=checkbox]:checked + label .e-btn-round{
+    background: #F37B1D;
+    border: 1px solid #FAC399;
+}
+.e-danger input[type=checkbox]:checked + label,
+.e-danger input[type=checkbox]:checked + label .e-btn-round{
+    background: #DD514C;
+    border: 1px solid #F0B1AE;
+}
+
+/*disable的状态*/
+.e-switch-round input[type=checkbox]:disabled + label,
+.e-switch-round input[type=checkbox]:disabled + label .e-btn-round,
+.e-switch input[type=checkbox]:disabled + label,
+.e-switch input[type=checkbox]:disabled + label .e-btn-round{
+    background: #EDEDED;
+}
+.e-default input[type=checkbox]:checked:disabled + label,
+.e-default input[type=checkbox]:checked:disabled + label .e-btn-round{
+    background: #F4F4F4;
+    border: 1px solid #DDD;
+}
+.e-primary input[type=checkbox]:checked:disabled + label,
+.e-primary input[type=checkbox]:checked:disabled + label .e-btn-round{
+    background: #71B9DE;
+    border: 1px solid #DDD;
+}
+.e-success input[type=checkbox]:checked:disabled + label,
+.e-success input[type=checkbox]:checked:disabled + label .e-btn-round{
+    background: #A5D6A5;
+    border: 1px solid #EDEDED;
+}
+.e-info input[type=checkbox]:checked:disabled + label,
+.e-info input[type=checkbox]:checked:disabled + label .e-btn-round{
+    background: #92CDEB;
+    border: 1px solid #EDEDED;
+}
+.e-warning input[type=checkbox]:checked:disabled + label,
+.e-warning input[type=checkbox]:checked:disabled + label .e-btn-round{
+    background: #F7C195;
+    border: 1px solid #DDD;
+}
+.e-danger input[type=checkbox]:checked:disabled + label,
+.e-danger input[type=checkbox]:checked:disabled + label .e-btn-round{
+    background: #F0B1AE;
+    border: 1px solid #DDD;
+}
+/****************************e-switch-round***********************************/
+.e-switch-round {
+	width: 60px;
+    height: 26px;
+    display: inline-block;
+}
+.e-switch-round label {
+	display: block;
+	width: 60px;
+	height: 26px;
+	border: 1px solid transparent;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px;
+    background: #DADADA;
+}
+.e-switch-round label .e-on {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    color: #DADADA;
+    font-size: 14px;
+    font-weight: 700;
+}
+.e-switch-round label .e-off {
+    position: absolute;
+    top: 4px;
+    right: 8px;    
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+.e-switch-round label .e-btn-round {
+    display: block;
+    width: 30px;
+	height: 30px;
+    border-radius: 50px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    z-index: 10;
+    background: #DADADA;
+    border: 1px solid #FFF;
+}
+.e-switch-round input[type=checkbox]:checked + label .e-btn-round{
+    left: 30px;
+}
+
+/****************************e-switch-flat***********************************/
+.e-switch-flatround,
+.e-switch-flatradius,
+.e-switch-flat {
+	width: 80px;
+    height: 24px;
+    display: inline-block;
+}
+.e-switch-flatround label,
+.e-switch-flatradius label,
+.e-switch-flat label {
+	display: block;
+	width: 80px;
+	height: 24px;
+	border: 2px solid #A7ABA6;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #A7ABA6;
+}
+.e-switch-flatradius label {
+    border-radius: 5px;
+}
+.e-switch-flatround label {
+	width: 54px;
+    border-radius: 15px;
+}
+.e-switch-flatround label  .e-on,
+.e-switch-flatradius label  .e-on,
+.e-switch-flat label .e-on {
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    color: #DADADA;
+    font-size: 14px;
+    font-weight: 700;
+}
+.e-switch-flatround label .e-off,
+.e-switch-flatradius label .e-off,
+.e-switch-flat label .e-off {
+    position: absolute;
+    top: 4px;
+    right: 9px;    
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+.e-btn-flatround,
+.e-btn-flatradius,
+.e-btn-flat {
+    display: block;
+    width: 40px;
+	height: 24px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background: #FFF;
+}
+.e-btn-flatradius {
+    border-radius: 5px;
+}
+.e-btn-flatround{
+	width: 24px;
+    border-radius: 14px;
+}
+/****************************e-switch-flat、e-switch-flatradius、e-switch-flatround checked***********************************/
+.e-switch-flatround input[type=checkbox]:checked + label .e-btn-flatround {
+	left: 30px;
+}
+.e-switch-flatradius input[type=checkbox]:checked + label .e-btn-flatradius,
+.e-switch-flat input[type=checkbox]:checked + label .e-btn-flat{
+    left: 40px;
+}
+
+.e-switch-flatround.e-default input[type=checkbox]:checked + label,
+.e-switch-flatradius.e-default input[type=checkbox]:checked + label,
+.e-switch-flat.e-default input[type=checkbox]:checked + label {
+    background: #FFF;
+    border: 2px solid #E3E3E3;
+}
+.e-switch-flatround.e-default input[type=checkbox]:checked + label .e-btn-flatround,
+.e-switch-flatradius.e-default input[type=checkbox]:checked + label .e-btn-flatradius,
+.e-switch-flat.e-default input[type=checkbox]:checked + label .e-btn-flat{
+	box-shadow: -1px 0px 2px #E3E3E3;
+	border-left: 1px solid #E3E3E3;
+	border-right: 1px solid #E3E3E3;
+}
+.e-switch-flatround.e-primary input[type=checkbox]:checked + label,
+.e-switch-flatradius.e-primary input[type=checkbox]:checked + label,
+.e-switch-flat.e-primary input[type=checkbox]:checked + label {
+    background: #0E90D2;
+    border: 2px solid #0E90D2;
+}
+.e-switch-flatround.e-success input[type=checkbox]:checked + label,
+.e-switch-flatradius.e-success input[type=checkbox]:checked + label,
+.e-switch-flat.e-success input[type=checkbox]:checked + label {
+    background: #5EB95E;
+    border: 2px solid #5EB95E;
+}
+.e-switch-flatround.e-info input[type=checkbox]:checked + label,
+.e-switch-flatradius.e-info input[type=checkbox]:checked + label,
+.e-switch-flat.e-info input[type=checkbox]:checked + label {
+    background: #3BB4F2;
+    border: 2px solid #3BB4F2;
+}
+.e-switch-flatround.e-warning input[type=checkbox]:checked + label,
+.e-switch-flatradius.e-warning input[type=checkbox]:checked + label,
+.e-switch-flat.e-warning input[type=checkbox]:checked + label {
+    background: #F37B1D;
+    border: 2px solid #F37B1D;
+}
+.e-switch-flatround.e-danger input[type=checkbox]:checked + label,
+.e-switch-flatradius.e-danger input[type=checkbox]:checked + label,
+.e-switch-flat.e-danger input[type=checkbox]:checked + label {
+    background: #DD514C;
+    border: 2px solid #DD514C;
+}
+/****************************e-switch-flat、e-switch-flatradius、e-switch-flatround disable***********************************/
+.e-switch-flatround input[type=checkbox]:disabled + label,
+.e-switch-flatradius input[type=checkbox]:disabled + label,
+.e-switch-flat input[type=checkbox]:disabled + label {
+	background: #EDEDED;
+	border: 2px solid #EDEDED;
+}
+.e-switch-flatround.e-default input[type=checkbox]:checked:disabled + label,
+.e-switch-flatradius.e-default input[type=checkbox]:checked:disabled + label,
+.e-switch-flat.e-default input[type=checkbox]:checked:disabled + label {
+    background: #F4F4F4;
+    border: 2px solid #DDD;
+}
+.e-switch-flatround.e-primary input[type=checkbox]:checked:disabled + label,
+.e-switch-flatradius.e-primary input[type=checkbox]:checked:disabled + label,
+.e-switch-flat.e-primary input[type=checkbox]:checked:disabled + label {
+    background: #71B9DE;
+    border: 2px solid #71B9DE;
+}
+.e-switch-flatround.e-success input[type=checkbox]:checked:disabled + label,
+.e-switch-flatradius.e-success input[type=checkbox]:checked:disabled + label,
+.e-switch-flat.e-success input[type=checkbox]:checked:disabled + label {
+    background: #A5D6A5;
+    border: 2px solid #A5D6A5;
+}
+.e-switch-flatround.e-info input[type=checkbox]:checked:disabled + label,
+.e-switch-flatradius.e-info input[type=checkbox]:checked:disabled + label,
+.e-switch-flat.e-info input[type=checkbox]:checked:disabled + label {
+    background: #92CDEB;
+    border: 2px solid #92CDEB;
+}
+.e-switch-flatround.e-warning input[type=checkbox]:checked:disabled + label,
+.e-switch-flatradius.e-warning input[type=checkbox]:checked:disabled + label,
+.e-switch-flat.e-warning input[type=checkbox]:checked:disabled + label {
+    background: #F7C195;
+    border: 2px solid #F7C195;
+}
+.e-switch-flatround.e-danger input[type=checkbox]:checked:disabled + label,
+.e-switch-flatradius.e-danger input[type=checkbox]:checked:disabled + label,
+.e-switch-flat.e-danger input[type=checkbox]:checked:disabled + label {
+    background: #F0B1AE;
+    border: 2px solid #F0B1AE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************e-switch-flatround***********************************/
+/*.e-switch-flatround {
+	width: 90px;
+    height: 30px;
+    display: inline-block;
+}
+.e-switch-flatround label {
+	display: block;
+	width: 90px;
+	height: 30px;
+	border: 2px solid #A7ABA6;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #A7ABA6;
+}
+.e-switch-flatround label .e-on {
+    position: absolute;
+    top: 4px;
+    left: 13px;
+    color: #DADADA;
+    font-size: 16px;
+    font-weight: 700;
+}
+.e-switch-flatround label .e-off {
+    position: absolute;
+    top: 4px;
+    right: 13px;    
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+.e-switch-flatround label .e-btn-flatround {
+    display: block;
+    width: 45px;
+	height: 30px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background: #FFF;
+}*/
+/****************************e-switch-flat、e-switch-flatradius checked***********************************/
+/*.e-switch-flatround input[type=checkbox]:checked + label .e-btn-flatround{
+    left: 45px;
+}
+
+.e-switch-flatround.e-default input[type=checkbox]:checked + label {
+    background: #FFF;
+    border: 2px solid #E3E3E3;
+}
+.e-switch-flatround.e-default input[type=checkbox]:checked + label .e-btn-flatround{
+	box-shadow: -1px 0px 2px #E3E3E3;
+	border-left: 1px solid #E3E3E3;
+	border-right: 1px solid #E3E3E3;
+}
+.e-switch-flatround.e-primary input[type=checkbox]:checked + label {
+    background: #0E90D2;
+    border: 2px solid #0E90D2;
+}
+.e-switch-flatround.e-success input[type=checkbox]:checked + label {
+    background: #5EB95E;
+    border: 2px solid #5EB95E;
+}
+.e-switch-flatround.e-info input[type=checkbox]:checked + label {
+    background: #3BB4F2;
+    border: 2px solid #3BB4F2;
+}
+.e-switch-flatround.e-warning input[type=checkbox]:checked + label {
+    background: #F37B1D;
+    border: 2px solid #F37B1D;
+}
+.e-switch-flatround.e-danger input[type=checkbox]:checked + label {
+    background: #DD514C;
+    border: 2px solid #DD514C;
+}*/
+/****************************e-switch-flat、e-switch-flatradius disable***********************************/
+/*.e-switch-flatround input[type=checkbox]:disabled + label {
+	background: #EDEDED;
+	border: 2px solid #EDEDED;
+}
+.e-switch-flatround.e-default input[type=checkbox]:checked:disabled + label {
+    background: #F4F4F4;
+    border: 2px solid #DDD;
+}
+.e-switch-flatround.e-primary input[type=checkbox]:checked:disabled + label {
+    background: #71B9DE;
+    border: 2px solid #71B9DE;
+}
+.e-switch-flatround.e-success input[type=checkbox]:checked:disabled + label {
+    background: #A5D6A5;
+    border: 2px solid #A5D6A5;
+}
+.e-switch-flatround.e-info input[type=checkbox]:checked:disabled + label {
+    background: #92CDEB;
+    border: 2px solid #92CDEB;
+}
+.e-switch-flatround.e-warning input[type=checkbox]:checked:disabled + label {
+    background: #F7C195;
+    border: 2px solid #F7C195;
+}
+.e-switch-flatround.e-danger input[type=checkbox]:checked:disabled + label {
+    background: #F0B1AE;
+    border: 2px solid #F0B1AE;
+}*/

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- 为了确保适当的绘制和触屏缩放，需要在 <head> 之中添加 viewport元数据标签。 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 若IE安装了Google Frame则使用Google Frame渲染，否则让 IE 浏览器运行最新的渲染模式下 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<!-- 让部分国产浏览器默认采用高速模式渲染页面 -->
+		<meta name="renderer" content="webkit">
+		<title>e-switch flat</title>
+		<link rel="stylesheet" href="../dist/eswitch.min.css" />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+	</head>
+
+	<body>
+			<h3>Default</h3>
+			<h4>enabled</h4>
+			<div class="e-switch-flatradius e-default">
+				<input type="checkbox" id="switch-default" />
+				<label for="switch-default">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-default">
+				<input type="checkbox" id="switch-default2" checked="checked" />
+				<label for="switch-default2">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<h4>disabled</h4>
+			<div class="e-switch-flatradius e-default">
+				<input type="checkbox" id="switch-default3" disabled="disabled" />
+				<label for="switch-default3">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-default">
+				<input type="checkbox" id="switch-default4" disabled="disabled" checked="checked" />
+				<label for="switch-default4">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			
+			<h1>这里没有 default</h1>
+			<h3>Primary</h3>
+			<h4>enabled</h4>
+			<div class="e-switch-flatradius e-primary">
+				<input type="checkbox" id="switch-primary" />
+				<label for="switch-primary">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-primary">
+				<input type="checkbox" id="switch-primary2" checked="checked" />
+				<label for="switch-primary2">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<h4>disabled</h4>
+			<div class="e-switch-flatradius e-primary">
+				<input type="checkbox" id="switch-primary3" disabled="disabled" />
+				<label for="switch-primary3">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-primary">
+				<input type="checkbox" id="switch-primary4" disabled="disabled" checked="checked" />
+				<label for="switch-primary4">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			
+			<h3>Success</h3>
+			<h4>enabled</h4>
+			<div class="e-switch-flatradius e-success">
+				<input type="checkbox" id="switch-success" />
+				<label for="switch-success">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-success">
+				<input type="checkbox" id="switch-success2" checked="checked" />
+				<label for="switch-success2">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<h4>disabled</h4>
+			<div class="e-switch-flatradius e-success">
+				<input type="checkbox" id="switch-success3" disabled="disabled" />
+				<label for="switch-success3">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-success">
+				<input type="checkbox" id="switch-success4" disabled="disabled" checked="checked" />
+				<label for="switch-success4">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			
+			<h3>Info</h3>
+			<h4>enabled</h4>
+			<div class="e-switch-flatradius e-info">
+				<input type="checkbox" id="switch-info" />
+				<label for="switch-info">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-info">
+				<input type="checkbox" id="switch-info2" checked="checked" />
+				<label for="switch-info2">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<h4>disabled</h4>
+			<div class="e-switch-flatradius e-info">
+				<input type="checkbox" id="switch-info3" disabled="disabled" />
+				<label for="switch-info3">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-info">
+				<input type="checkbox" id="switch-info4" disabled="disabled" checked="checked" />
+				<label for="switch-info4">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			
+			<h3>Warning</h3>
+			<h4>enabled</h4>
+			<div class="e-switch-flatradius e-warning">
+				<input type="checkbox" id="switch-warning" />
+				<label for="switch-warning">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-warning">
+				<input type="checkbox" id="switch-warning2" checked="checked" />
+				<label for="switch-warning2">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<h4>disabled</h4>
+			<div class="e-switch-flatradius e-warning">
+				<input type="checkbox" id="switch-warning3" disabled="disabled" />
+				<label for="switch-warning3">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-warning">
+				<input type="checkbox" id="switch-warning4" disabled="disabled" checked="checked" />
+				<label for="switch-warning4">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			
+			<h3>Danger</h3>
+			<h4>enabled</h4>
+			<div class="e-switch-flatradius e-danger">
+				<input type="checkbox" id="switch-danger" />
+				<label for="switch-danger">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-danger">
+				<input type="checkbox" id="switch-danger2" checked="checked" />
+				<label for="switch-danger2">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<h4>disabled</h4>
+			<div class="e-switch-flatradius e-danger">
+				<input type="checkbox" id="switch-danger3" disabled="disabled" />
+				<label for="switch-danger3">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+			<div class="e-switch-flatradius e-danger">
+				<input type="checkbox" id="switch-danger4" disabled="disabled" checked="checked" />
+				<label for="switch-danger4">
+					<span class="e-on"><i class="icon-ok"></i></span>
+					<span class="e-btn-flatradius"></span>
+					<span class="e-off"><i class="icon-remove"></i></span>
+				</label>
+			</div>
+	</body>
+
+</html>
